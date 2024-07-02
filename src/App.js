@@ -1,11 +1,18 @@
-import logo from './logo.svg';
+
+import { Link } from 'react-router-dom';
 import './App.css';
-import Pokedex from './components/Pokedex/Pokedex';
+import CustomRoutes from './Routes/CustomRoutes';
+
 
 function App() {
   return (
     <div className="App">
-      <Pokedex/>
+      <div className='outer-pokedex'>
+      <h1 id='pokedex-heading'>
+      <Link to='/'>Pokedex</Link>  
+        </h1> 
+      <CustomRoutes/>
+      </div>
     </div>
   );
 }
